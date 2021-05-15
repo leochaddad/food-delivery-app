@@ -1,1 +1,58 @@
-<mxfile host="app.diagrams.net" modified="2021-05-15T18:41:40.161Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" version="14.6.13" etag="bu9yrRPP_dJbVyqdw9Ct" type="github"><diagram id="nRNeWYrpzQJVvI69Rqnn">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-15T18:55:11.164Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="-_vWLL4ixI5q6WUjvHtS" version="14.6.13" type="github">
+  <diagram id="nRNeWYrpzQJVvI69Rqnn" name="Page-1">
+    <mxGraphModel dx="1422" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JigTFeRLz7L414qkhkrC-2" value="Servico de pedidos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="90" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-4" value="Servico de status" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="200" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-5" value="Servico de pagamento" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="420" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-6" value="Servico de entrega" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="310" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-9" value="Servico de consulta" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-10" value="Criar pedido" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="205" y="110" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-11" value="Editar pedido" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="205" y="130" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="70" width="120" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-17" value="Pedido criado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="665" y="110" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-18" value="Pedido editado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="660" y="130" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-19" value="Pedido cancelado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="655" y="150" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-21" value="Pagamento aprovado" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="410" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-24" value="Pagamento recusado" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="450" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-27" value="Pagamento devolvido" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="490" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-28" value="Pedido em entrega" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="650" y="330" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JigTFeRLz7L414qkhkrC-29" value="Status alterado" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="655" y="230" width="100" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
