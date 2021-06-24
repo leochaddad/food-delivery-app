@@ -20,6 +20,6 @@ class OrderModel {
         'preco': preco,
         'tamanho': tamanho,
         'quantidade': quantidade,
-        'temperatura': controleTemperatura
+        'controleTemperatura': controleTemperatura
       };
 }

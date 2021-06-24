@@ -5,15 +5,18 @@ export class OrderEntity {
   @PrimaryGeneratedColumn()
   idPedido: string;
   @Column()
-  nomeProduto: string;
+  nome: string;
   @Column("integer")
   quantidade: number;
   @Column("integer")
-  idProduto: number;
+  preco: number;
+  @Column("integer")
+  tamanho: number;
+  @Column("integer")
+  id: number;
   @Column('integer')
   controleTemperatura: number;
   @Column()
   created_at: number;
-
 
 }

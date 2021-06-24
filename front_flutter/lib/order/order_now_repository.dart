@@ -7,7 +7,7 @@ class OrderNowRepository {
   Future<void> finalizarCompra(OrderModel obj) async {
     try {
       print(obj.toJson());
-      await dio.post('URL', data: obj.toJson());
+      await dio.post('http://192.168.0.110:3000/orders', data: obj.toJson());
     } on DioError catch (e) {
       print('Erro ao realizar post ${e.error}');
     }
