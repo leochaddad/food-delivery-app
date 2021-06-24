@@ -1,5 +1,5 @@
 export class NewOrderDto{
-    readonly idProduto: string;
+    readonly idProduto: number;
     readonly nomeProduto: string;
     readonly tamanho: number;
     readonly controleTemperatura: number;

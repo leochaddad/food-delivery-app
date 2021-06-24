@@ -1,5 +1,5 @@
 export interface Order{
-    idProduto:string;
+    idProduto:number;
     nomeProduto:string;
     quantidade:number;
     controleTemperatura:number;

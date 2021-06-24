@@ -8,8 +8,8 @@ export class OrderEntity {
   nomeProduto: string;
   @Column("integer")
   quantidade: number;
-  @Column()
-  idProduto: string;
+  @Column("integer")
+  idProduto: number;
   @Column('integer')
   controleTemperatura: number;
   @Column()
