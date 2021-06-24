@@ -16,29 +16,13 @@ class HomeRepository {
           Ingredients(
               color: Colors.pink.shade400,
               ingrediente: "Water",
-              icon: Icons.face),
+              icon: Icons.water),
           Ingredients(
-              color: Colors.blue, ingrediente: "Sugar", icon: Icons.favorite),
+              color: Colors.blue, ingrediente: "Sugar", icon: Icons.food_bank),
           Ingredients(
               color: Colors.brown.shade400,
               ingrediente: "Coffee",
-              icon: Icons.time_to_leave),
-          Ingredients(
-              color: Colors.pink.shade400,
-              ingrediente: "Water",
-              icon: Icons.face),
-          Ingredients(
-              color: Colors.pink.shade400,
-              ingrediente: "Water",
-              icon: Icons.face),
-          Ingredients(
-              color: Colors.pink.shade400,
-              ingrediente: "Water",
-              icon: Icons.face),
-          Ingredients(
-              color: Colors.pink.shade400,
-              ingrediente: "Water",
-              icon: Icons.face),
+              icon: Icons.coffee),
         ],
         informacoesNutricionais: InformacoesNutricionaisModel(
             calorias: 250, cafeina: 150, proteinas: 10)),
@@ -53,13 +37,15 @@ class HomeRepository {
           Ingredients(
               color: Colors.pink.shade400,
               ingrediente: "Water",
-              icon: Icons.face),
+              icon: Icons.water),
           Ingredients(
-              color: Colors.blue, ingrediente: "Sugar", icon: Icons.favorite),
+              color: Colors.blue, ingrediente: "Sugar", icon: Icons.food_bank),
           Ingredients(
               color: Colors.brown.shade400,
-              ingrediente: "Coffee",
+              ingrediente: "Cappuccino",
               icon: Icons.time_to_leave),
+          Ingredients(
+              color: Colors.black54, ingrediente: "Coffee", icon: Icons.coffee),
         ],
         informacoesNutricionais: InformacoesNutricionaisModel(
             calorias: 12, cafeina: 12, proteinas: 12)),
@@ -74,13 +60,17 @@ class HomeRepository {
           Ingredients(
               color: Colors.pink.shade400,
               ingrediente: "Water",
-              icon: Icons.face),
+              icon: Icons.water),
           Ingredients(
-              color: Colors.blue, ingrediente: "Sugar", icon: Icons.favorite),
+              color: Colors.blue, ingrediente: "Sugar", icon: Icons.food_bank),
+          Ingredients(
+              color: Colors.grey.shade400,
+              ingrediente: "Milk",
+              icon: Icons.coffee_outlined),
           Ingredients(
               color: Colors.brown.shade400,
               ingrediente: "Coffee",
-              icon: Icons.time_to_leave),
+              icon: Icons.coffee),
         ],
         informacoesNutricionais: InformacoesNutricionaisModel(
             calorias: 12000, cafeina: 139, proteinas: 1000)),

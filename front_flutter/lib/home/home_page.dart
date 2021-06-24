@@ -24,21 +24,17 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.symmetric(
               horizontal: 16,
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Sabor da semana",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Veja tudo",
-                    style: TextStyle(color: Colors.grey.shade500),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Sabor da semana",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
-                )
-              ],
+                ],
+              ),
             ),
           ),
           SizedBox(height: 2),
@@ -67,17 +63,13 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  "Veja algumas fotos",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                ),
-                TextButton(
-                  onPressed: () {},
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
                   child: Text(
-                    "Veja tudo",
-                    style: TextStyle(color: Colors.grey.shade500),
+                    "Veja algumas fotos",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                   ),
-                )
+                ),
               ],
             ),
           ),
