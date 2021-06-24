@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Param, Body} from '@nestjs/common';
+import { Controller, Get, Post, Param, Body, Delete} from '@nestjs/common';
 import { NewOrderDto } from './dto/new-order.dto';
 import { OrdersService } from './orders.service';
 import { Order } from './interfaces/order.interface';
@@ -21,6 +21,10 @@ export class OrdersController {
     @Post()
     async newOrder(@Body() newOrder: NewOrderDto):Promise<Order> {
         return this.ordersService.createOrder(newOrder);
+    }
+    @Delete(':id')
+    async cancellOrder(@Param() params){
+        return this.ordersService.cancellOrder(params.id);
     }
 
 }

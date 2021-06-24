@@ -3,18 +3,17 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity()
 export class OrderEntity {
   @PrimaryGeneratedColumn()
-  order_id?: string;
+  idPedido: string;
   @Column()
-  user_id?: string;
+  nomeProduto: string;
+  @Column("integer")
+  quantidade: number;
   @Column()
-  comments?: string;
-  @Column()
-  address: string;
-  @Column('text')
-  products: string[];
+  idProduto: string;
+  @Column('integer')
+  controleTemperatura: number;
   @Column()
   created_at: number;
-  @Column()
-  status:string;
+
 
 }

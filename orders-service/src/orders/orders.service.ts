@@ -21,7 +21,10 @@ export class OrdersService {
 
   async createOrder(order :Order):Promise<Order> {
     order.created_at=new Date().getTime();
-    order.status = "CREATED";
     return await this.orderRepository.save(order);
+  }
+  async cancellOrder(id: string): Promise<any>{
+      //muda o status para cancelado
+      //emite evento de status cancelado
   }
 }
