@@ -3,6 +3,7 @@ import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Order } from './interfaces/order.interface';
 import { OrderEntity } from './database/order.entity';
+import axios from 'axios';
 
 @Injectable()
 export class OrdersService {
@@ -21,9 +22,19 @@ export class OrdersService {
 
   async createOrder(order :Order):Promise<Order> {
     order.created_at=new Date().getTime();
-    return await this.orderRepository.save(order);
+    const createdOrder =  await this.orderRepository.save(order);
+
+    await axios.post("http://localhost:10000/eventos", {
+      tipo:"PedidoCriado", 
+      dados:createdOrder
+    })
+    return createdOrder;
   }
   async cancellOrder(id: string): Promise<any>{
+    await axios.post("http://localhost:10000/eventos", {
+      tipo:"PedidoCancelado", 
+      dados:{idPedido: id}
+    })
       //muda o status para cancelado
       //emite evento de status cancelado
   }

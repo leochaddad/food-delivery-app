@@ -9,7 +9,7 @@ const funcoes = {
         const entregas = entregaPorPedidoId[entrega.pedidoId];
         const entregaParaAtualizar = entregas.find((e) => e.id === entrega.id)
         entregaParaAtualizar.status = entrega.status;
-        axios.post('http://localhost:5000/eventos', {
+        axios.post('http://localhost:10000/eventos', {
             tipo: "entregaAtualizada",
             dados: {
                 id: entrega.Id,
@@ -28,8 +28,8 @@ app.put('/pedidos/:id/entrega', (req, res) => {
     const entregaDoPedido = entregaPorPedidoId[req.params.id] || [];
     entregaDoPedido.push({ id: idEntrega, localizacao, motoboy, status: 'A Caminho' })
     entregaPorPedidoId[req.params.id] = entregaDoPedido
-    await axios.post("localhost:5000/eventos", {
-        tipo: entregaCriada,
+    await axios.post("localhost:10000/eventos", {
+        tipo: "EntregaCriada",
         dados: {
             id = idEntrega,
             idPedido = req.params.id,
