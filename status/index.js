@@ -31,6 +31,17 @@ const funcoes = {
             }
         })
     },
+    EntregaAlterada: (entrega) => {
+        if(entrega.status.includes("entregue")){
+        axios.post("http://localhost:10000/eventos", {
+            tipo: "StatusAlterado",
+            dados: {
+                idPedido: entrega.idPedido,
+                status:"Entregue"
+            }
+        })
+    }
+    },
 
 }
 

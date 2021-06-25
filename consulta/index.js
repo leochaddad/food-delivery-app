@@ -17,7 +17,6 @@ const funcoes = {
         }
     },
     "StatusAlterado":(payload) =>{
-        console.log("AAAAAAA")
         const pedido = baseConsulta.find(pedido =>
              Number.parseInt(pedido.idPedido) === Number.parseInt(payload.idPedido));
         if(pedido){
@@ -25,6 +24,13 @@ const funcoes = {
         }
     }, 
     "EntregaCriada":(entrega) =>{
+        const pedido = baseConsulta.find(pedido =>
+             Number.parseInt(pedido.idPedido) === Number.parseInt(entrega.idPedido));
+        if(pedido){
+            pedido.entrega = entrega;
+        }
+    },
+    "EntregaAlterada":(entrega) =>{
         const pedido = baseConsulta.find(pedido =>
              Number.parseInt(pedido.idPedido) === Number.parseInt(entrega.idPedido));
         if(pedido){

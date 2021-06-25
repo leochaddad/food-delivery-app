@@ -21,12 +21,25 @@ app.post('/pedidos/:id/entrega', async (req, res) => {
     }
     entregas.push(entrega);
 
-    const respos = await axios.post("http://localhost:10000/eventos", {
+    await axios.post("http://localhost:10000/eventos", {
         tipo: "EntregaCriada",
         dados: entrega
     })
-    console.log(respos)
-    res.status(201).send(entrega)
+
+    res.status(200).send(entrega)
+})
+
+app.put('/pedidos/:id/entrega', async (req, res) => {
+    const entrega = entregas.find(entrega=>entrega.idPedido === req.params.id)
+    if(req.body.status){
+        entrega.status = req.body.status
+    }
+    await axios.post("http://localhost:10000/eventos", {
+        tipo: "EntregaAlterada",
+        dados: entrega
+    })
+
+    res.status(200).send(entrega)
 })
 
 app.get('/pedidos/:id/entrega', (req, res) => {
