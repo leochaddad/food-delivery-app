@@ -42,6 +42,15 @@ const funcoes = {
         })
     }
     },
+    PedidoCancelado:({idPedido}) => {
+        axios.post("http://localhost:10000/eventos", {
+            tipo: "StatusAlterado",
+            dados: {
+                idPedido: idPedido,
+                status:"Cancelado"
+            }
+        })
+    }
 
 }
 

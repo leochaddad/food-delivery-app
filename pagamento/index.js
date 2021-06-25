@@ -34,7 +34,7 @@ app.put('/pedidos/:id/pagamento', async (req, res) => {
         dados: {
             id: idPag,
             pedidoId: req.params.id,
-            status: "Pago"
+            status: "Aguardando"
         }
     })
     res.status(201).send(pagamentoDoPedido)
