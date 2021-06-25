@@ -24,7 +24,7 @@ app.post('/eventos', (req, res) => {
 })
 
 app.get('/eventos', (req, res) => {
-    req.send(eventos)
+    res.status(200).send(eventos)
 })
 
 app.listen(10_000, () => console.log('Microsserviço do Barramento de Eventos inicado na porta 10000.'))

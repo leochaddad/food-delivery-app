@@ -12,11 +12,25 @@ const funcoes = {
     "PagamentoCriado":(pagamento) =>{
         const pedido = baseConsulta.find(pedido =>
              Number.parseInt(pedido.idPedido) === Number.parseInt(pagamento.pedidoId));
-        console.log(pagamento)
         if(pedido){
             pedido.pagamento = pagamento;
         }
-    }
+    },
+    "StatusAlterado":(payload) =>{
+        console.log("AAAAAAA")
+        const pedido = baseConsulta.find(pedido =>
+             Number.parseInt(pedido.idPedido) === Number.parseInt(payload.idPedido));
+        if(pedido){
+            pedido.status = payload.status;
+        }
+    }, 
+    "EntregaCriada":(entrega) =>{
+        const pedido = baseConsulta.find(pedido =>
+             Number.parseInt(pedido.idPedido) === Number.parseInt(entrega.idPedido));
+        if(pedido){
+            pedido.entrega = entrega;
+        }
+    },
 }
 
 const baseConsulta = []
@@ -26,6 +40,7 @@ app.get('/pedidos', (req, res) => {
 })
 
 app.post('/eventos', (req, res) => {
+    console.log(req.body.tipo)
     try {
         console.log(req.body.tipo)
         funcoes[req.body.tipo](req.body.dados)

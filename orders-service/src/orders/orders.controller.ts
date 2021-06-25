@@ -19,7 +19,7 @@ export class OrdersController {
     }
 
     @Post()
-    async newOrder(@Body() newOrder: NewOrderDto):Promise<Order> {
+    async newOrder(@Body() newOrder: Order):Promise<Order> {
         return this.ordersService.createOrder(newOrder);
     }
     @Delete(':id')
